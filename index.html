@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamMakers - Equipo de Esports</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="img/logoDM.jpg" alt="DreamMakers Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>DREAM<span>MAKERS</span></h1>
+                        <p>ESPORTS CLUB</p>
+                    </div>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            Equipos <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-link" data-game="valorant">Valorant</a></li>
+                            <li><a href="#" class="dropdown-link" data-game="lol">League of Legends</a></li>
+                            <li><a href="#" class="dropdown-link" data-game="csgo">CS:GO</a></li>
+                            <li><a href="#" class="dropdown-link" data-game="fortnite">Fortnite</a></li>
+                            <li><a href="#" class="dropdown-link" data-game="apex">Apex Legends</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            Jugadores <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu players-menu">
+                            <li><a href="#" class="dropdown-link player-link" data-player="player1">DreamKnight <span class="game-tag">Valorant</span></a></li>
+                            <li><a href="#" class="dropdown-link player-link" data-player="player2">ShadowMaker <span class="game-tag">CS:GO</span></a></li>
+                            <li><a href="#" class="dropdown-link player-link" data-player="player3">NightWolf <span class="game-tag">League of Legends</span></a></li>
+                            <li><a href="#" class="dropdown-link player-link" data-player="player4">StormBreaker <span class="game-tag">Fortnite</span></a></li>
+                            <li><a href="#" class="dropdown-link player-link" data-player="player5">IcePhoenix <span class="game-tag">Apex Legends</span></a></li>
+                            <li><a href="#" class="dropdown-link player-link" data-player="player6">BlazeFury <span class="game-tag">Valorant</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">DREAMMAKERS</h1>
+            <p class="hero-subtitle">EQUIPO DE ESPORTS PROFESIONAL</p>
+            <p class="hero-description">Conquistando el mundo de los esports con pasión, dedicación y talento excepcional</p>
+            <div class="hero-buttons">
+                <a href="#equipos" class="btn btn-primary">Ver Equipos</a>
+                <a href="#jugadores" class="btn btn-secondary">Conocer Jugadores</a>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="grid-pattern"></div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section id="equipos" class="teams-section">
+        <div class="container">
+            <h2 class="section-title">NUESTROS EQUIPOS</h2>
+            <div class="teams-grid">
+                <div class="team-card" data-game="valorant">
+                    <div class="team-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>VALORANT</h3>
+                    <p>Equipo táctico de élite</p>
+                    <div class="team-players">
+                        <span>DreamKnight</span>
+                        <span>BlazeFury</span>
+                        <span>TacticalGhost</span>
+                    </div>
+                </div>
+
+                <div class="team-card" data-game="lol">
+                    <div class="team-icon">
+                        <i class="fas fa-chess-king"></i>
+                    </div>
+                    <h3>LEAGUE OF LEGENDS</h3>
+                    <p>Estrategia y dominio del mapa</p>
+                    <div class="team-players">
+                        <span>NightWolf</span>
+                        <span>MidLaneDemon</span>
+                        <span>JungleKing</span>
+                    </div>
+                </div>
+
+                <div class="team-card" data-game="csgo">
+                    <div class="team-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>CS:GO</h3>
+                    <p>Precisión y trabajo en equipo</p>
+                    <div class="team-players">
+                        <span>ShadowMaker</span>
+                        <span>HeadHunter</span>
+                        <span>SniperElite</span>
+                    </div>
+                </div>
+
+                <div class="team-card" data-game="fortnite">
+                    <div class="team-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>FORTNITE</h3>
+                    <p>Construcción y supervivencia</p>
+                    <div class="team-players">
+                        <span>StormBreaker</span>
+                        <span>BuildMaster</span>
+                        <span>VictoryRoyal</span>
+                    </div>
+                </div>
+
+                <div class="team-card" data-game="apex">
+                    <div class="team-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>APEX LEGENDS</h3>
+                    <p>Velocidad y adaptabilidad</p>
+                    <div class="team-players">
+                        <span>IcePhoenix</span>
+                        <span>ApexPredator</span>
+                        <span>LegendSlayer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Players Section -->
+    <section id="jugadores" class="players-section">
+        <div class="container">
+            <h2 class="section-title">NUESTROS JUGADORES</h2>
+            <div class="players-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="valorant">Valorant</button>
+                <button class="filter-btn" data-filter="lol">LoL</button>
+                <button class="filter-btn" data-filter="csgo">CS:GO</button>
+                <button class="filter-btn" data-filter="fortnite">Fortnite</button>
+                <button class="filter-btn" data-filter="apex">Apex</button>
+            </div>
+            
+            <div class="players-grid" id="players-grid">
+                <!-- Los jugadores se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">CONTACTO</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Únete a DreamMakers</h3>
+                    <p>¿Tienes el talento para formar parte de nuestro equipo? Contáctanos y demuestra tu nivel.</p>
+                    <div class="contact-links">
+                        <a href="https://x.com/DreamMakersClub" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i> @DreamMakersClub
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fas fa-envelope"></i> contact@dreammakers.gg
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-discord"></i> DreamMakers Discord
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logoDM.jpg" alt="DreamMakers Logo" class="footer-logo-img">
+                    <div class="footer-logo-text">
+                        <h3>DREAMMAKERS</h3>
+                        <p>Esports Club</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#equipos">Equipos</a>
+                    <a href="#jugadores">Jugadores</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DreamMakers Esports Club. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
