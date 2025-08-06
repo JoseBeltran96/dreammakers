@@ -7,7 +7,7 @@ const playersData = [
         role: 'Main Fighter',
         rank: 'God of destruction',
         wins: 234,
-        kda: 'Reina',
+        character: 'Reina',
         icon: '⚡',
         quote: 'La elegancia y la fuerza van de la mano',
         twitter: 'https://twitter.com/corrale46'
@@ -19,7 +19,7 @@ const playersData = [
         role: 'Grappler',
         rank: 'God of destruction',
         wins: 198,
-        kda: 'King',
+        character: 'King',
         icon: '🦁',
         quote: 'El rey de la jaula nunca se rinde',
         twitter: 'https://twitter.com/pwayne2288'
@@ -31,7 +31,7 @@ const playersData = [
         role: 'Naughty player',
         rank: 'God of destruction',
         wins: 167,
-        kda: 'Reina',
+        character: 'Reina',
         icon: '👑',
         quote: 'Dos maestros de Reina, doble poder',
         twitter: 'https://twitter.com/PotyAlex'
@@ -43,7 +43,7 @@ const playersData = [
         role: 'Aggressive Fighter',
         rank: 'God of destruction',
         wins: 289,
-        kda: 'Feng',
+        character: 'Feng',
         icon: '🏋',
         quote: 'El viento del kung fu nunca para',
         twitter: 'https://twitter.com/BadCatGatocan'
@@ -55,7 +55,7 @@ const playersData = [
         role: 'Heavy Hitter',
         rank: 'Tekken God Supreme',
         wins: 156,
-        kda: 'Fahkumram',
+        character: 'Fahkumram',
         icon: '💤',
         quote: 'Durmiendo hasta que es hora de pelear',
         twitter: 'https://twitter.com/StillNappin'
@@ -67,7 +67,7 @@ const playersData = [
         role: 'Elegant Fighter',
         rank: 'Fujin',
         wins: 203,
-        kda: 'Lili',
+        character: 'Lili',
         icon: '🌸',
         quote: 'La gracia monegasca en cada movimiento',
         twitter: 'https://twitter.com/Bluesennsations'
@@ -79,7 +79,7 @@ const playersData = [
         role: 'Military Fighter',
         rank: 'Tekken God Supreme',
         wins: 221,
-        kda: 'Dragunov',
+        character: 'Dragunov',
         icon: '🤼',
         quote: 'Silencioso pero letal como el viento blanco',
         twitter: 'https://twitter.com/AdrrnnCopito'
@@ -91,7 +91,7 @@ const playersData = [
         role: 'Prime Minister',
         rank: 'Fujin',
         wins: 245,
-        kda: 'Lidia',
+        character: 'Lidia',
         icon: '🥋',
         quote: 'Karate polaco con determinación inquebrantable',
         twitter: 'https://twitter.com/akamaru1984'
@@ -103,7 +103,7 @@ const playersData = [
         role: 'Demonic Fighter',
         rank: 'God of destruction',
         wins: 312,
-        kda: 'Devil Jin',
+        character: 'Devil Jin',
         icon: '😈',
         quote: 'Entre la luz y la oscuridad, elijo el poder',
         twitter: 'https://twitter.com/VictorMJ77'
@@ -115,7 +115,7 @@ const playersData = [
         role: 'Desert Warrior',
         rank: 'God of destruction',
         wins: 278,
-        kda: 'Shaheen',
+        character: 'Shaheen',
         icon: '🏜️',
         quote: 'Las arenas del desierto revelan todos los secretos',
         twitter: 'https://twitter.com/Oracle_Javier'
@@ -244,7 +244,7 @@ function createPlayerCard(player) {
             <strong>${player.rank}</strong>
         </div>
         <div class="player-character">
-            <div class="character-name">${player.kda}</div>
+            <div class="character-name">${player.character}</div>
             <div class="character-label">Main Character</div>
         </div>
         <div class="player-stats">
@@ -358,7 +358,7 @@ function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
         const headerHeight = document.querySelector('.header').offsetHeight;
-        const sectionTop = section.offsetTop - headerHeight - 20;
+        const sectionTop = section.offsetTop - headerHeight;
         
         window.scrollTo({
             top: sectionTop,
@@ -384,7 +384,7 @@ function initializeSmoothScrolling() {
 function initializeScrollAnimations() {
     const observerOptions = {
         threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        rootMargin: '0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -418,7 +418,8 @@ document.addEventListener('click', function(e) {
 
 // Efectos adicionales
 function addInteractiveEffects() {
-    // Efecto de paralaje en el hero
+    // Efecto de paralaje en el hero - DESHABILITADO para evitar problemas de espaciado
+    /*
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
         const rate = scrolled * -0.5;
@@ -428,6 +429,7 @@ function addInteractiveEffects() {
             heroSection.style.transform = `translateY(${rate}px)`;
         }
     });
+    */
 
     // Efecto de typing en el título (opcional)
     typeWriter();
