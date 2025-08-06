@@ -2,153 +2,123 @@
 const playersData = [
     {
         id: 'player1',
-        name: 'DreamKnight',
-        game: 'valorant',
-        role: 'Duelist',
-        rank: 'Radiant',
-        wins: 245,
-        kda: '1.8',
-        icon: '🛡️'
+        name: 'Corrales46',
+        game: 'tekken',
+        role: 'Main Fighter',
+        rank: 'God of destruction',
+        wins: 234,
+        kda: 'Reina',
+        icon: '⚡',
+        quote: 'La elegancia y la fuerza van de la mano',
+        twitter: 'https://twitter.com/corrale46'
     },
     {
         id: 'player2',
-        name: 'ShadowMaker',
-        game: 'csgo',
-        role: 'AWPer',
-        rank: 'Global Elite',
-        wins: 312,
-        kda: '1.9',
-        icon: '🎯'
+        name: 'Pwayne',
+        game: 'tekken',
+        role: 'Grappler',
+        rank: 'God of destruction',
+        wins: 198,
+        kda: 'King',
+        icon: '🦁',
+        quote: 'El rey de la jaula nunca se rinde',
+        twitter: 'https://twitter.com/pwayne2288'
     },
     {
         id: 'player3',
-        name: 'NightWolf',
-        game: 'lol',
-        role: 'Jungler',
-        rank: 'Challenger',
-        wins: 189,
-        kda: '2.1',
-        icon: '🐺'
+        name: 'Pot1',
+        game: 'tekken',
+        role: 'Naughty player',
+        rank: 'God of destruction',
+        wins: 167,
+        kda: 'Reina',
+        icon: '👑',
+        quote: 'Dos maestros de Reina, doble poder',
+        twitter: 'https://twitter.com/PotyAlex'
     },
     {
         id: 'player4',
-        name: 'StormBreaker',
-        game: 'fortnite',
-        role: 'Solo',
-        rank: 'Champion',
-        wins: 156,
-        kda: '2.3',
-        icon: '⚡'
+        name: 'BadCat',
+        game: 'tekken',
+        role: 'Aggressive Fighter',
+        rank: 'God of destruction',
+        wins: 289,
+        kda: 'Feng',
+        icon: '🏋',
+        quote: 'El viento del kung fu nunca para',
+        twitter: 'https://twitter.com/BadCatGatocan'
     },
     {
         id: 'player5',
-        name: 'IcePhoenix',
-        game: 'apex',
-        role: 'Support',
-        rank: 'Predator',
-        wins: 203,
-        kda: '1.7',
-        icon: '🔥'
+        name: 'StillNapping',
+        game: 'tekken',
+        role: 'Heavy Hitter',
+        rank: 'Tekken God Supreme',
+        wins: 156,
+        kda: 'Fahkumram',
+        icon: '💤',
+        quote: 'Durmiendo hasta que es hora de pelear',
+        twitter: 'https://twitter.com/StillNappin'
     },
     {
         id: 'player6',
-        name: 'BlazeFury',
-        game: 'valorant',
-        role: 'Controller',
-        rank: 'Immortal 3',
-        wins: 198,
-        kda: '1.6',
-        icon: '💀'
+        name: 'Bluaza',
+        game: 'tekken',
+        role: 'Elegant Fighter',
+        rank: 'Fujin',
+        wins: 203,
+        kda: 'Lili',
+        icon: '🌸',
+        quote: 'La gracia monegasca en cada movimiento',
+        twitter: 'https://twitter.com/Bluesennsations'
     },
     {
         id: 'player7',
-        name: 'TacticalGhost',
-        game: 'valorant',
-        role: 'Sentinel',
-        rank: 'Radiant',
-        wins: 267,
-        kda: '1.5',
-        icon: '👻'
+        name: 'Copito',
+        game: 'tekken',
+        role: 'Military Fighter',
+        rank: 'Tekken God Supreme',
+        wins: 221,
+        kda: 'Dragunov',
+        icon: '🤼',
+        quote: 'Silencioso pero letal como el viento blanco',
+        twitter: 'https://twitter.com/AdrrnnCopito'
     },
     {
         id: 'player8',
-        name: 'MidLaneDemon',
-        game: 'lol',
-        role: 'Mid Laner',
-        rank: 'Grandmaster',
-        wins: 223,
-        kda: '2.0',
-        icon: '😈'
+        name: 'Akamaru',
+        game: 'tekken',
+        role: 'Prime Minister',
+        rank: 'Fujin',
+        wins: 245,
+        kda: 'Lidia',
+        icon: '🥋',
+        quote: 'Karate polaco con determinación inquebrantable',
+        twitter: 'https://twitter.com/akamaru1984'
     },
     {
         id: 'player9',
-        name: 'JungleKing',
-        game: 'lol',
-        role: 'Jungler',
-        rank: 'Master',
-        wins: 178,
-        kda: '1.8',
-        icon: '👑'
+        name: 'Skydan',
+        game: 'tekken',
+        role: 'Demonic Fighter',
+        rank: 'God of destruction',
+        wins: 312,
+        kda: 'Devil Jin',
+        icon: '😈',
+        quote: 'Entre la luz y la oscuridad, elijo el poder',
+        twitter: 'https://twitter.com/VictorMJ77'
     },
     {
         id: 'player10',
-        name: 'HeadHunter',
-        game: 'csgo',
-        role: 'Entry Fragger',
-        rank: 'Global Elite',
-        wins: 289,
-        kda: '2.2',
-        icon: '🎪'
-    },
-    {
-        id: 'player11',
-        name: 'SniperElite',
-        game: 'csgo',
-        role: 'Sniper',
-        rank: 'Global Elite',
-        wins: 234,
-        kda: '1.9',
-        icon: '🔫'
-    },
-    {
-        id: 'player12',
-        name: 'BuildMaster',
-        game: 'fortnite',
-        role: 'Builder',
-        rank: 'Champion',
-        wins: 134,
-        kda: '2.1',
-        icon: '🏗️'
-    },
-    {
-        id: 'player13',
-        name: 'VictoryRoyal',
-        game: 'fortnite',
-        role: 'All-around',
-        rank: 'Champion',
-        wins: 167,
-        kda: '2.0',
-        icon: '🏆'
-    },
-    {
-        id: 'player14',
-        name: 'ApexPredator',
-        game: 'apex',
-        role: 'Assault',
-        rank: 'Predator',
-        wins: 198,
-        kda: '2.4',
-        icon: '🦅'
-    },
-    {
-        id: 'player15',
-        name: 'LegendSlayer',
-        game: 'apex',
-        role: 'Recon',
-        rank: 'Master',
-        wins: 176,
-        kda: '1.8',
-        icon: '🗡️'
+        name: 'Oracle_99',
+        game: 'tekken',
+        role: 'Desert Warrior',
+        rank: 'God of destruction',
+        wins: 278,
+        kda: 'Shaheen',
+        icon: '🏜️',
+        quote: 'Las arenas del desierto revelan todos los secretos',
+        twitter: 'https://twitter.com/Oracle_Javier'
     }
 ];
 
@@ -259,9 +229,10 @@ function renderPlayers() {
 // Crear tarjeta de jugador
 function createPlayerCard(player) {
     const card = document.createElement('div');
-    card.className = 'player-card';
+    card.className = 'player-card clickable-card';
     card.setAttribute('data-game', player.game);
     card.setAttribute('data-player', player.id);
+    card.setAttribute('data-twitter', player.twitter);
 
     card.innerHTML = `
         <div class="player-avatar">
@@ -272,17 +243,32 @@ function createPlayerCard(player) {
         <div class="player-rank">
             <strong>${player.rank}</strong>
         </div>
+        <div class="player-character">
+            <div class="character-name">${player.kda}</div>
+            <div class="character-label">Main Character</div>
+        </div>
         <div class="player-stats">
             <div class="stat">
                 <div class="stat-value">${player.wins}</div>
                 <div class="stat-label">Victorias</div>
             </div>
-            <div class="stat">
-                <div class="stat-value">${player.kda}</div>
-                <div class="stat-label">K/D/A</div>
-            </div>
+        </div>
+        <div class="player-quote">
+            "${player.quote || 'Listo para la batalla'}"
+        </div>
+        <div class="twitter-indicator">
+            <i class="fab fa-twitter"></i>
+            <span>Sígueme en Twitter</span>
         </div>
     `;
+
+    // Agregar evento click para redirigir a Twitter
+    card.addEventListener('click', function() {
+        const twitterUrl = this.getAttribute('data-twitter');
+        if (twitterUrl) {
+            window.open(twitterUrl, '_blank');
+        }
+    });
 
     return card;
 }
@@ -294,7 +280,8 @@ function getGameDisplayName(game) {
         'lol': 'League of Legends',
         'csgo': 'CS:GO',
         'fortnite': 'Fortnite',
-        'apex': 'Apex Legends'
+        'apex': 'Apex Legends',
+        'tekken': 'Tekken'
     };
     return gameNames[game] || game;
 }

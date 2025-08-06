@@ -505,6 +505,93 @@ body {
     color: var(--text-light);
 }
 
+.player-character {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.character-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-family: 'Orbitron', monospace;
+}
+
+.character-label {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-top: 0.2rem;
+}
+
+.player-quote {
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    border-left: 3px solid var(--secondary-color);
+    padding-left: 0.5rem;
+    text-align: left;
+}
+
+.player-rank {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.twitter-indicator {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: rgba(29, 161, 242, 0.2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(29, 161, 242, 0.4);
+    transition: var(--transition);
+}
+
+.twitter-indicator i {
+    color: #1DA1F2;
+    font-size: 1.1rem;
+}
+
+.twitter-indicator span {
+    color: var(--text-light);
+    font-size: 0.8rem;
+}
+
+.clickable-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clickable-card:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.clickable-card:hover .twitter-indicator {
+    background: rgba(29, 161, 242, 0.4);
+    border-color: rgba(29, 161, 242, 0.6);
+}
+
+.clickable-card:hover .twitter-indicator i {
+    transform: scale(1.2);
+}
+
+.clickable-card:active {
+    transform: translateY(-3px) scale(1.01);
+}
+
 /* Contact Section */
 .contact-section {
     padding: 5rem 0;
